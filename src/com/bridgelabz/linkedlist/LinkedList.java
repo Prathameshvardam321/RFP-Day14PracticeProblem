@@ -51,4 +51,17 @@ public class LinkedList <E>{
         tail = secondLast;
         return temp;
     }
+    public Boolean search(E key){
+        Node<E> temp = head;
+        if (head==null){
+            return false;
+        }
+        while (temp!=null){
+            if (temp.getData().equals(key)){
+                return true;
+            }
+            temp=temp.getNext();
+        }
+        return false;
+    }
 }
