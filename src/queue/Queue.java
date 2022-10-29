@@ -10,4 +10,7 @@ public class Queue <T>{
     void printQueue(){
         linkedList.display();
     }
+    void deQueue(){
+        linkedList.pop();
+    }
 }
