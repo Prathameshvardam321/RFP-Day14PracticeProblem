@@ -72,6 +72,7 @@ public class LinkedList <E>{
             newNode.setNext(temp);
             searchNode.setNext(newNode);
             display();
+
             return true;
         }
         return false;
