@@ -10,6 +10,7 @@ public class Node<E>{
         this.data = data;
     }
 
+
     public E getData() {
         return data;
     }

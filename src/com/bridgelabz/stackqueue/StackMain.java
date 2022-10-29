@@ -7,5 +7,23 @@ public class StackMain {
         stack.push(30);
         stack.push(56);
         stack.display();
+        System.out.println();
+        System.out.println();
+        stack.peak();
+        stack.popStack();
+        stack.display();
+        System.out.println();
+        System.out.println();
+        stack.peak();
+        stack.popStack();
+        stack.display();
+        System.out.println();
+        System.out.println();
+        stack.peak();
+        stack.popStack();
+        stack.display();
+
+
+
     }
 }
