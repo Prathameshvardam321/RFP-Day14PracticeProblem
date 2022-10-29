@@ -8,7 +8,13 @@ public class Stack<E> {
         linkedList.add(data);
     }
 
-    void display(){
+    void peak(){
+            System.out.println(linkedList.head.getData());
+        }
+        void display(){
         linkedList.display();
+    }
+    void popStack(){
+        linkedList.pop();
     }
 }
