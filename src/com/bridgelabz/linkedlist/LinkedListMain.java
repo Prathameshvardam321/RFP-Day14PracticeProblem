@@ -11,5 +11,6 @@ public class LinkedListMain {
         System.out.println();
         linkedList2.insertion(30,123);
 
+
     }
 }
