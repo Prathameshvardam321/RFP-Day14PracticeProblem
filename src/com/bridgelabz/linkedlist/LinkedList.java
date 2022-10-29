@@ -36,4 +36,9 @@ public class LinkedList <E>{
             tail = newNode;
         }
     }
+    public E pop() {
+        E temp = head.getData();
+        head = head.getNext();
+        return temp;
+    }
 }
