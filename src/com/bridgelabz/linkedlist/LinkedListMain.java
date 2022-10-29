@@ -2,7 +2,7 @@ package com.bridgelabz.linkedlist;
 
 public class LinkedListMain {
 
-    public static void main(String[] args) {
+   public static void main(String[] args) {
         LinkedList<Integer> linkedList1 = new LinkedList<>();
         linkedList1.add(56);
         linkedList1.add(30);
