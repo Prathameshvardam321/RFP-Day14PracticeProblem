@@ -51,16 +51,29 @@ public class LinkedList <E>{
         tail = secondLast;
         return temp;
     }
-    public Boolean search(E key){
+    public Node search(E key){
         Node<E> temp = head;
         if (head==null){
-            return false;
+            return null;
         }
         while (temp!=null){
             if (temp.getData().equals(key)){
-                return true;
+                return temp;
             }
             temp=temp.getNext();
+        }
+        return null;
+    }
+    public Boolean insertion(E searchData,E insertData){
+        Node<E> searchNode = search(searchData);
+        if (searchNode!=null){
+            Node<E> temp = searchNode.getNext();
+            Node<E> newNode = new Node<>(insertData);
+            newNode.setNext(temp);
+            searchNode.setNext(newNode);
+            display();
+
+            return true;
         }
         return false;
     }
